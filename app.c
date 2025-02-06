@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 
 
 // Data types
@@ -29,16 +30,55 @@ char firstLetter = 'A';
 
 // More on Datatypes
 
-// There are long int (32bits) which is takes more integers than the normal int (16bits) and then the long log int even takes more than the long int (64bits). long long int are used when precision and range is critical such as in scientific or mathematical computations or when dealing with large numbers/
+// There are long int (32bits) which is takes more integers than the normal int (16bits) and then the long log int even takes more than the long int (64bits). long long int are used when precision and range is critical such as in scientific or mathematical computations or when dealing with large numbers.
+
+// <stdubt.h> it helps to maintain consistent size on tiegers accross different platforms
+
+//int8_t = signed 8-bit integer, uint8_t = unsigned 8-bit integer
+// int16_t and uint16_t signed 16-bit integer and unsigned 16-bit integer
+// int32_t and uint32_t signed and unsigned 32-bit integer
+// int64_t and uint64_t signed and unsigned 64-bit integer
+// intptr_t and uintptr_t  integer capable of holding pointer and unsigned integer capable of holding pointer
 
 long long int bigNumber;
 
 int main(){
+    
+
 
     long long int myLargeNumber = 1234567890123456789LL;
 
+    float myfloat = 3.14f; // this f at the end is very important so that the computer will know you are talking about float. if you don't the computer will treat it as double
+    double myDouble = 3.141592653589793;
+    
+    // Scientific notation
+    float scientificFloat = 2.5e3; // 2.5 * 10^3
+    double scientficDouble = 1.23e-4; // 1.23 * 10^(-4)
 
+    // Strings and Characters. Characters are represented with a single quotation mark while strings are represented with double quotation mark.
+
+    char mychar = 'a';
+    char myString[] = "Hello World"; // The hard brackets are needed when you want to specify a particular size to the string. This is because a string is an array of characters.
+
+    if(isalpha(mychar)){
+        // Checking if a value is a string
+        printf("%c is digit\n", mychar);
+
+    }
+
+    if(isdigit(mychar)){
+        // Checking if a value contain a digit
+        printf("hello");
+    }
+
+    char uppercaseChar = toupper(mychar); // converting a character to upper case
+
+     printf("Uppercase %c\n", uppercaseChar);
+    printf("Float: %f\n", myfloat );
+    printf("Double: %lf\n", myDouble );
     printf("Large Number %lld\n", myLargeNumber);
+
+
     return 0;
 }
 
