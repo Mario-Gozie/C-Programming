@@ -132,6 +132,7 @@ int main(){
 
 
     // FUNCTIONS
+    // function can be defined outside the main and called in the main. please note that you must define a function before you call it.
 
     int add(int a, int b){
         return a + b;
@@ -141,7 +142,50 @@ int main(){
     printf("sum = %d\n", sum);
 
 
+    ///////   WORK ON POINTERS AND UNDERSTAND IT VERY WELL TONIGHT
+
+
+
+
     
+
+
+
+    // FORMATING OUTPUT.
+
+    // Integers are printed with "%d or %i"
+    // floats are printed with "%f"
+    // character are printed with "%c"
+    // Strings are printed with "%s"
+
+    // YOU CAN ALSO SPECIFY WITH AND PRECISION
+    // %5d for Minimum of 5 characters
+    // "%.2f" for Two digits after the decimal point
+
+    // JUSTIFICATION
+
+    int numx = 42;
+    printf("Left-Justify: %-5d\n", numx); // This means put the output on the left with a total of 5 spaces which means after the integer 42 there would be three spaces
+
+    // OCTAL REPRESENTATION
+    int numy = 42;
+    printf("Octal: %o\n", numy); // THIS WILL PRINT DECIMAL NUMBER IN BASE 10
+
+    // HEXADECIMAL REPRESENTATION
+    int numz = 42;
+    printf("Hexadecimal: %x\n", numz);
+
+    // %u UNSIGNED DECIMAL
+    unsigned int numj = 42;
+    printf("Unsigned Decimal: %u\n", numj);
+
+    // EXCAPE SEQUENCE
+    printf("Line 1\nLine 2\n");
+
+    // \t Tab
+    printf("Column 1\tColumn 2\n");
+
+
     printf("Addition: %d\n", result_add);
     printf("Subtraction: %d\n", result_sub);
     printf("Multiplication: %d\n", result_mul);
