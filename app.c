@@ -1,9 +1,5 @@
 #include <stdio.h>
 
-int main(){
-    printf("hello world\n");
-    return 0;
-}
 
 // Data types
 // int = integer
@@ -21,3 +17,28 @@ int main(){
 int age;
 float salary;
 char grade;
+
+// Initialization of variables 
+// Variable names must start with a letter or an underscore after the first letter, you can now have letters, digits, and underscore
+// Variable names are case-sensitive
+// Certain keywords are reserved and cannot be used as a variable name
+int count = 10;
+float pi = 3.14;
+char firstLetter = 'A';
+
+
+// More on Datatypes
+
+// There are long int (32bits) which is takes more integers than the normal int (16bits) and then the long log int even takes more than the long int (64bits). long long int are used when precision and range is critical such as in scientific or mathematical computations or when dealing with large numbers/
+
+long long int bigNumber;
+
+int main(){
+
+    long long int myLargeNumber = 1234567890123456789LL;
+
+
+    printf("Large Number %lld\n", myLargeNumber);
+    return 0;
+}
+
