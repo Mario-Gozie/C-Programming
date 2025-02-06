@@ -106,11 +106,40 @@ int main(){
 
     // IMPLICIT CONVERSION
 
-    int intValue = 10;
-    float floatValue = intValue;
+    // int intValue = 10;
+    // float floatValue = intValue;
 
     // Type promotion is a situation where by a value is coverted to a higher datatype while type demotion is a situation where a datatype is converted to a lower data type.
-    
+
+    int j = 5;
+    double k =  10.5;
+    double result = j + k; // There is type promotion here for the variable "a" to double befor addition
+
+    // it is important to note that during type demotion, there may be loss in precision. for example when moving from double to int or float.
+
+    // EXAMPLES OF CONVERSIONS (IMPLICIT AND EXPLICIT)
+
+    // IMPLICIT
+
+    int floatValue = 10;
+    float intValue2 = floatValue;
+    printf("Implicit Conversion: %f\n", intValue2);
+
+    // EXPLICIT
+    float floatValue2 = 15.75;
+    int intValueconvert = (int)floatValue2;
+    printf("Implicit Conversion: %d\n", intValueconvert);
+
+
+    // FUNCTIONS
+
+    int add(int a, int b){
+        return a + b;
+    }
+
+    int sum = add(5, 3);
+    printf("sum = %d\n", sum);
+
 
     
     printf("Addition: %d\n", result_add);
