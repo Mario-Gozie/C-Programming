@@ -73,7 +73,57 @@ int main(){
 
     char uppercaseChar = toupper(mychar); // converting a character to upper case
 
-     printf("Uppercase %c\n", uppercaseChar);
+
+    // ARITHEMETIC OPERATIONS
+    int a = 10, b = 4;
+
+    // ADDITION + 
+    int result_add = a + b;
+
+    // SUBTRACTION
+
+    int result_sub = a - b;
+
+    // MULTIPLICATION
+
+    int result_mul = a * b;
+
+    // DIVISION
+
+    float result_div = (float)a/b; // Ensure that atlease one operand is float
+
+    int result_mod = a % b;
+
+    // Increment and Decrement
+
+    int counter = 5;
+    counter ++;
+
+
+    // TYPE CONVERSION
+
+    // This can be done manually (explicitly) or automatically (implicitly)
+
+    // IMPLICIT CONVERSION
+
+    int intValue = 10;
+    float floatValue = intValue;
+
+    // Type promotion is a situation where by a value is coverted to a higher datatype while type demotion is a situation where a datatype is converted to a lower data type.
+    
+
+    
+    printf("Addition: %d\n", result_add);
+    printf("Subtraction: %d\n", result_sub);
+    printf("Multiplication: %d\n", result_mul);
+    printf("Division: %f\n", result_div);
+    printf("Modulus: %d\n", result_mod);
+    printf("counter %d\n", counter);
+
+    
+
+
+    printf("Uppercase %c\n", uppercaseChar);
     printf("Float: %f\n", myfloat );
     printf("Double: %lf\n", myDouble );
     printf("Large Number %lld\n", myLargeNumber);
