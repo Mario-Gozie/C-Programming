@@ -143,7 +143,8 @@ int main(){
 
 
     ///////   WORK ON POINTERS AND UNDERSTAND IT VERY WELL TONIGHT
-
+    // The "&" sign represents address and pointers during creation starts it's name with "*" sign which represent the value when calling with the pointer name. There can be pointer of ponters, and in this case, we have to use "**"
+    int a = 10;
 
 
 
